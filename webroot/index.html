@@ -7,7 +7,9 @@
 	<meta name="description" content="Upoznaj mene i moj rad, a ako te kojim slučajem srušim s nogu, slobodno me i ukradeš na koji mjesec kao stažista. :)">
 	<meta name="author" content="Igor Rinkovec">
 
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Pacifico' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skeleton.css">
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,10 +17,126 @@
 </head>
 
 <body>
+	<!--<div id="curPos">0</div>-->
+	<div class="orange-bg">
+		<div class="container"
+			data-top="opacity:1"
+			data--400-top="opacity:0">
+			<section id="introduction" class="grid gutter">
+				<div class="cell right" id="basic_info">
+					<h1>Igor Rinkovec</h1>
+					<h2>Developer</h2>
+				</div>
+				<div class="cell left">
+					<img src="img/igor.svg" id="avatar" />
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="dark-bg">
+		<div class="container">
+			<section id="summary" class="grid gutter">
+				<div class="cell center">
+					<img src="img/scroll.svg" data-500-top="opacity:1" data-400-top="opacity:0" id="scroll"/>
 
+					<p data-400-top="opacity:0" data-300-top="opacity:1" class="text96px">Znatiželjan sam i <span class="keyword">volim</span> izazove</p>
+					<br><br><br>
+					<img  data-400-top="opacity:0" data-100-top="opacity:1" src="img/interests.svg" id="interests" />
+					<p data-500-top="opacity:0" data-400-top="opacity:1">ovo su samo neke od stvari koje me zabavljaju...</p>
+					<img src="img/brain.svg" id="brain"
+					data-500-top="opacity:0"
+					data-300-top="opacity:1;transform:scale(1)"
+					data-top="opacity:1;transform:scale(10)"
+					data--300-top="opacity:1;transform:scale(10)"
+					data--500-top="opacity:1;transform:scale(1)"
+					/>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="orange-bg">
+		<section id="projects">
+			<div class="grid gutter">
+				<div class="cell center">
+					<p class="text82px">u slobodno vrijeme freelanceam</p>
+					<p class="sidenote">( slobodno pregledaj neke moje projekte )</p>
+				</div>
+			</div>
+			<div id="project-list" class="grid">
+				<div class="cell">
+					<a href="http://www.ria.hr" target="_blank"><img src="img/projects/ria-hr.jpg" /></a>
+					<span>ria.hr</span>
+				</div>
+				<div class="cell">
+					<a href="https://play.google.com/store/apps/details?id=hr.igorr.otvoreniapp" target="_blank"><img src="img/projects/otvoreni-app.jpg" /></a>
+					<span>Otvoreni App</span>
+				</div>
+				<div class="cell">
+					<a href="https://portal.pool.enterprises" target="_blank"><img src="img/projects/pool-enterprises.jpg" /></a>
+					<span>pool.enterprises</span>
+				</div>
+			</div>
+		</section>
+	</div>	
+	<div class="dark-bg">
+		<div class="container">
+			<section id="meetme" class="grid gutter">
+				<div class="cell center">
+					<div id="handshake">
+						<p data-400-top="opacity:0" data-300-top="opacity:1">no ipak, za upoznavanje je potrebno dvoje</p>
+						<br><br>
+						<img src="img/hand.svg" id="hand"
+							data-400-top="left:-80%"
+							data-300-top="left:-20%;transform:rotate(0deg);"
+							data-225-top="transform:rotate(10deg);"
+							data-150-top="transform:rotate(-10deg);"
+							data-75-top="transform:rotate(10deg);"
+							data-top="transform:rotate(0deg);"
+						/>
+						<img src="img/zrak.svg" data-350-top="opacity:0" data-250-top="opacity:0.7" id="zrak"/>
+					</div>
+
+					<div id="social">
+						<p data-600-top="opacity:0" data-400-top="opacity:1">upravo zbog toga, javi se, ne grizem :)</p>
+						<div class="grid grid-bottom gutter">
+							<div class="cell">
+								<a href="https://www.facebook.com/igor.rinkovec" target="_blank"><img src="img/social_fb.svg" data-500-top="opacity:0" data-450-top="opacity:1"/></a>
+							</div>
+							<div class="cell">
+								<a href="https://twitter.com/LordShigi" target="_blank"><img src="img/social_tw.svg" data-450-top="opacity:0" data-400-top="opacity:1"/></a>
+							</div>
+							<div class="cell">
+								<a href="https://github.com/TheWildHorse" target="_blank"><img src="img/social_gh.svg" data-400-top="opacity:0" data-350-top="opacity:1"/></a>
+							</div>
+							<div class="cell">
+								<a href="mailto:igor.rinkovec@gmail.com"><img src="img/social_gm.svg" data-350-top="opacity:0" data-300-top="opacity:1"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer>
+		<div class="orange-bg">
+			<div class="container"
+			data-100-end="opacity:0"
+			data-end="opacity:1"
+			>
+				<div id="kraj" class="center">KRAJ :)</div>
+				<div class="left">Želite pregledati source? Ova stranica nalazi se na <a href="https://github.com/TheWildHorse/portfolio-web" target="_blank">GitHub-u</a>.</div>
+				<div class="right">Izradeno u Varaždinu s PUNO refreshanja. :)</div>
+				<div style="clearfix"></div>
+				<a href=""><img src="img/top.svg" id="top" /></a>
+			</div>
+		</div>
+	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/skrollr.min.js"></script>
 	<script src="js/skrollr.ie.min.js"></script>
 	<script src="js/init.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/ScrollToPlugin.min.js"></script>
+	<script src="js/smoothPageScroll.js"></script>
 </body>
 </html>

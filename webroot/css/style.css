@@ -1,0 +1,267 @@
+/* Global */
+html, body {
+	margin: 0;
+	padding: 0;
+	width:100%;
+	background-attachment:fixed;
+	color:#fff;
+	font-family: 'Pacifico', cursive;
+	background-color: #FBCEB1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+}
+
+h1 { font-size: 96px; }
+h2 { font-size: 64px; }
+h3 { font-size: 48px; }
+h4 { font-size: 32px; }
+h5 { font-size: 18px; }
+
+p {
+	font-size: 50px;
+	line-height: 50px;
+}
+.keyword {
+	color: rgb(255, 117, 82);
+	text-decoration: underline;
+}
+.sidenote {
+	color: #FFF !important;
+	font-size: 36px;
+}
+
+.container {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.left { text-align: left }
+.right { text-align: right }
+.center { text-align: center }
+
+.text96px { font-size: 96px; margin: 20px 0 0 0; line-height: 96px; }
+.text82px { font-size: 82px; }
+.text38px { font-size: 38px; }
+
+.oswald {
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+}
+
+
+/* Global end */
+
+/* DEBUG */
+#curPos {
+	position: fixed;
+	line-height: 10px;
+	padding: 20px;
+	padding-bottom: 30px;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 50px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 99999;
+}
+/* DEBUG END */
+
+/* Background */
+
+.orange-bg {
+	background-color: #FBCEB1;
+}
+
+.orange-bg p {
+	color: rgb(255, 117, 82);
+}
+
+.dark-bg {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Background ends */
+
+/* Introduction */
+
+#introduction {
+	height: 500px;
+}
+
+#introduction > #basic_info {
+	padding-top: 100px;
+}
+
+#introduction > div > #avatar {
+	max-width: 90%;
+	max-height: 90%;
+	margin-left: 30px;
+	vertical-align: bottom;
+	position: absolute;
+	bottom:0;
+}
+
+/* Indtroduction end */
+
+/* Summary */
+
+#summary {
+	height:1300px;
+	position: relative;
+}
+
+#summary > div > #scroll {
+	position: absolute;
+	z-index: 103;
+	top: 2%;
+	width:7%;
+	left:48%;
+}
+
+#summary > div > #interests {
+	width:90%;
+}
+
+#summary > div > #brain {
+	position: absolute;
+	width:20%;
+	left:50%;
+	margin-left: -10%;
+	z-index: 103;
+}
+
+/* Summary end */
+
+/* Projects */
+
+#projects {
+	padding-bottom: 70px;
+}
+
+#projects > #project-list {
+	margin-top: 20px;
+}
+
+#projects > #project-list > div {
+	overflow: hidden;
+	position: relative;
+}
+
+#projects > #project-list > div > span {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	padding: 5px;
+	background-color: rgba(52,52,52,0.4);
+	color: rgb(52,52,52);
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 1.5%;
+}
+
+#projects > #project-list img {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
+	max-width: 100%;
+	margin:-1px;
+   	padding:1px;
+	filter: blur(2px) grayscale(100%);
+	-webkit-filter: blur(2px) grayscale(100%);
+	-moz-filter: blur(2px) grayscale(100%);
+	-o-filter: blur(2px) grayscale(100%);
+	-ms-filter: blur(2px) grayscale(100%);
+}
+
+#projects > #project-list img:hover {
+	max-width: 100%;
+	margin:-1px;
+   	padding:1px;
+	filter: blur(0px) grayscale(0%);
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+}
+
+/* Projects end */
+
+/* Meet me */
+
+#meetme {
+	height: 1100px;
+}
+
+#meetme > div > #handshake {
+	height:400px;
+	position: relative;
+}
+
+#meetme > div > #handshake > #hand {
+	position: absolute;
+	width:65%;
+}
+
+#meetme > div > #handshake > #zrak {
+	position: absolute;
+	left:62%;
+	opacity: 0;
+	z-index: 100;
+	width:40%;
+}
+
+
+#meetme > div > #social img {
+	width:50%;
+}
+
+#meetme > div > #social div {
+	margin-top: 5%;
+}
+
+/* Meet me end */
+
+/* Footer */
+
+footer {
+	font-size: 22px;
+	color: rgb(255, 117, 82);
+}
+
+footer a:link { color: rgb(189, 78, 50); }
+footer a:visited { color: rgb(189, 78, 50); }
+
+footer .left {
+	float: left;
+	width: 50%;
+}
+footer .right {
+	float: right;
+	width: 50%;
+}
+
+footer #kraj {
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 280px;
+}
+
+footer #top {
+	position: absolute;
+	right:0%;
+	bottom:20%;
+	width: 10%;
+}
+
+/* Footer end */
