@@ -72,6 +72,24 @@ p {
 }
 /* DEBUG END */
 
+/* Loading */
+.loading {
+	position: fixed;
+	margin: 0;
+	padding-top: 10%;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(255, 117, 82);
+	top:0;
+	left:0;
+	z-index: 99999;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+}
+/* Loading end */
+
 /* Background */
 
 .orange-bg {

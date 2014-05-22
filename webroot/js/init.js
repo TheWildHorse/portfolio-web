@@ -20,5 +20,7 @@
 	        $('html, body').animate({scrollTop: 0}, 1000);
 	        return false;
 	    });
+
+	    $('.loading').fadeOut(500);
     }, 1000);
 } )(jQuery);
